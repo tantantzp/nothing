@@ -3,23 +3,25 @@
 
 using namespace std;
 
-int main() 
+int main()
 {
+
+    int a;
     int n;
     cin >> n;
     map<int, int> cntMap;
-    
+
     int max = -1;
     for(int i = 0; i < n; i ++)
 	{
         int tmp;
         int tcnt = 0;
 		cin >> tmp;
-	/*	if(cntMap.count(tmp) == 0) 
+	/*	if(cntMap.count(tmp) == 0)
 		{
-		    tcnt = cntMap[tmp] = 1;	
+		    tcnt = cntMap[tmp] = 1;
 		}
-		else 
+		else
 		{
 			tcnt =  ++cntMap[tmp];
 		}	*/
@@ -35,11 +37,11 @@ int main()
 			res = i->first;
 			break;
 		}
-		
+
 	}
 	cout << res << endl;
 	//cout << cntMap.count(10)<<endl;
 	//cout << cntMap.count(15)<<endl;
 	return 0;
-	
+
 }
